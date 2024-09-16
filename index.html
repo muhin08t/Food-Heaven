@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="sticky top-0 z-50">
         <div class="navbar bg-stone-100">
             <div class="navbar-start lg:w-2/5">
                 <div class="w-16 ml-10">
@@ -24,10 +24,11 @@
     
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><button class="btn btn-accent w-20">Potato</button></li>
-                    <li><button class="btn btn-accent w-20 ml-5">Soup</button></li>
-                    <li><button class="btn btn-accent w-20 ml-5">Chicken</button></li>
-                    <li><button class="btn btn-accent w-20 ml-5">Beef</button></li>
+                    <li><button id="potato" onclick="updateUI('potato')"
+                       class="btn btn-accent w-20">Potato</button></li>
+                    <li><button id="soup" onclick="updateUI('soup')" class="btn btn-accent w-20 ml-5">Soup</button></li>
+                    <li><button id="chicken" onclick="updateUI('chicken')" class="btn btn-accent w-20 ml-5">Chicken</button></li>
+                    <li><button id="beef" onclick="updateUI('beef')" class="btn btn-accent w-20 ml-5">Beef</button></li>
                 </ul>
             </div>
             <div class="navbar-end lg:hidden">
@@ -94,7 +95,16 @@
       </section>
 
       <section>
+        <div id="loading-bar" class="flex flex-row w-screen justify-center">
+          <span class="loading loading-ball loading-xs"></span>
+          <span class="loading loading-ball loading-sm"></span>
+          <span class="loading loading-ball loading-md"></span>
+          <span class="loading loading-ball loading-lg"></span>
+        </div>
+      </section>
+      <section>
         <div id="result-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 m-10">
+
         </div>
       </section>
     </main>

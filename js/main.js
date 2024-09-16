@@ -1,17 +1,31 @@
-const loadFood = () => {
-    let inputText = "Potato";
+const loadFood = (inputText) => {
+    console.log("type value "+inputText);
     let url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${inputText}`
-     console.log("url value "+url);
+    console.log("url value "+url);
     fetch(url)
         .then(res => res.json())
         .then(data => showMeals(data.meals))
         .catch(error => console.log('Error: ', error));
 }
 
-loadFood();
+loadFood("potato");
+
+const updateUI = (params) => {
+    let container = document.getElementById("result-container");
+    container.innerHTML = '';
+    document.getElementById('loading-bar').style.visibility = 'visible';
+    loadFood(params);
+}
+
+const updateNavbarUI = () => {
+    let btn = document.getElementById("potato");
+    btn.classList.remove('bg-blue-500'); 
+    btn.classList.add('bg-red-900'); 
+}
 
 const showMeals = (meals) => {
     // console.log('Data is: ', meals);
+    document.getElementById('loading-bar').style.visibility = 'hidden';
     let container = document.getElementById("result-container");
     container.innerHTML = '';
     meals.forEach(meal => {
