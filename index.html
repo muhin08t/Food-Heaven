@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Food Heaven</title>
@@ -53,59 +54,83 @@
 
     <main>
       <section>
-        <div class="carousel w-full mt-10">
-      <div id="slide1" class="carousel-item relative w-full"> 
-            <img
-              src="img/banner1.jpg"
-              class="w-full" />
-            <div class="absolute z-50 left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide3" class="btn btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-circle">❯</a>
-            </div>
-            <div class="absolute top-1/2 w-screen flex items-center justify-center">
-              <div class="card bg-base-100 w-96 shadow-xl">
-                <div class="card-body">
-                  <h2 class="card-title">Red Peas Soup</h2>
-                  <p>Dust the meat with flour to lightly coat.</p>
-                  <h4 class="text-blue-500">Sultan Dyne</h4>
+        <div class="carousel w-full mt-0">
+
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="hero" style="background-image: url('img/banner/chicken-stick-banner.png');">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-neutral-content text-center py-20">
+                <div class="max-w-md">
+                  <h2 class="mb-5 text-5xl font-bold">Chicken</h2>
+                  <p class="mb-5 text-center">
+                    The chicken (Gallus domesticus) is a large and round short-winged bird,
+                    domesticated from the red junglefowl of Southeast Asia around 8,000 years ago.
+                  </p>
                 </div>
               </div>
             </div>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
           </div>
+    
+    
           <div id="slide2" class="carousel-item relative w-full">
-            <img
-              src="img/banner2.jpg"
-              class="w-full" />
-            <div class="absolute z-50 left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <div class="hero" style="background-image: url('img/banner/soup-banner.png');">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-neutral-content text-center py-20">
+                <div class="max-w-md">
+                  <h2 class="mb-5 text-5xl font-bold">Soup</h2>
+                  <p class="mb-5 text-neutral-content">
+                    Soup is a primarily liquid food, generally served warm or hot,
+                    that is made by combining ingredients of meat or vegetables with stock, milk, or water.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
               <a href="#slide1" class="btn btn-circle">❮</a>
               <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
-            <div class="absolute top-1/2 w-screen flex items-center justify-center">
-              <div class="card bg-base-100 w-96 shadow-xl">
-                <div class="card-body">
-                  <h2 class="card-title">French Onion Soup</h2>
-                  <p>Melt the butter with the oil.</p>
-                  <h4 class="text-blue-500">Sultan Dyne</h4>
+          </div>
+    
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="hero" style="background-image: url('img/banner/potato-banner.jpg');">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-neutral-content text-center py-20">
+                <div class="max-w-md">
+                  <h2 class="mb-5 text-5xl font-bold">Potato</h2>
+                  <p class="mb-5 text-center">
+                    Potatoes are processed into a great variety of products, including cooked potatoes,
+                    par-fried potato strips, french fries, potato chips, potato starch, potato granules,
+                    potato flakes, and dehydrated diced potatoes, among others.
+                  </p>
                 </div>
               </div>
+            </div>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
             </div>
           </div>
-          <div id="slide3" class="carousel-item relative w-full">
-            <img
-              src="img/banner3.jpg"
-              class="w-full" />
-            <div class="absolute z-50 left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide1" class="btn btn-circle">❯</a>
-            </div>
-            <div class="absolute top-1/2 w-screen flex items-center justify-center">
-              <div class="card bg-base-100 w-96 shadow-xl">
-                <div class="card-body">
-                  <h2 class="card-title">Creamy Tomato Soup</h2>
-                  <p>Put the oil, onions, celery, carrots.</p>
-                  <h4 class="text-blue-500">Sultan Dyne</h4>
+    
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="hero" style="background-image: url('img/banner/meat-banner.png');">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-neutral-content text-center py-20">
+                <div class="max-w-md">
+                  <h2 class="mb-5 text-5xl font-bold">Meat</h2>
+                  <p class="mb-5 text-center">
+                    Meat is animal tissue, often muscle, that is eaten as food.
+                    Humans have hunted and farmed other animals for meat since prehistory.
+                  </p>
                 </div>
               </div>
+            </div>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
             </div>
           </div>
         </div>
